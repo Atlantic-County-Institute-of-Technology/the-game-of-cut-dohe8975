@@ -1,10 +1,11 @@
+import java.util.*;
 
 
 public class Deck {
     public static void main(String[] args)
     {
         // initializing array
-        int[] arr = {40,10,25,63};
+        int[] arr = {faces, suits};
 
         // size of array
         int n = arr.length;
