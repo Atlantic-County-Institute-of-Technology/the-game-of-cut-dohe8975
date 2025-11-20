@@ -19,20 +19,20 @@ public class Main {
                 myDeck.shuffle();   // shuffles deck
                 System.out.println("\npick a number 1-51:");    // ask player for card number
                 playerInput = scan.nextInt(); // works to get player input
-                System.out.printf("You picked card " + playerInput);
+                System.out.printf("\nYou picked card " + playerInput);
                 if(playerInput >= 52) {
-                    System.out.println("Cant pick card 52 or higher, making player card 51");
+                    System.out.println("\nCant pick card 52 or higher, making player card 51");
                     playerInput = 51;
                     System.out.println(playerInput);
                 }
                 if(playerInput <= 0 ) {
-                    System.out.println("Cant pick card 0 or lower, making player card 1");
+                    System.out.println("\nCant pick card 0 or lower, making player card 1");
                     playerInput = 1;
                     System.out.println(playerInput);
                 }
 
 
-                System.out.printf("Player Card is " + myDeck.deck[playerInput]);
+                System.out.printf("\nPlayer Card is " + myDeck.deck[playerInput]);
                 System.out.printf("\nCPU Card is " + myDeck.deck[52 - playerInput]); // starts from after the player cut the deck for the cpu card
 
                 Card playerCard = myDeck.deck[playerInput];
