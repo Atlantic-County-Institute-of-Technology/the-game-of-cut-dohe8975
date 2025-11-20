@@ -52,24 +52,24 @@ public class Main {
                 }
                 if(playerCard.getFace() == cpuCard.getFace()) {
                     if(playerCard.getSuit() > cpuCard.getSuit()) {
-                        System.out.println("Player Wins This Round!!");
+                        System.out.println("\nPlayer Wins This Round!!");
                         playerWins += 1;
                     }
                     else if(playerCard.getSuit() < cpuCard.getSuit()) {
-                        System.out.println("CPU Wins This Round!!");
+                        System.out.println("\nCPU Wins This Round!!");
                         cpuWins += 1;
                     }
                     else {
-                        System.out.println("That shouldn't happen");
+                        System.out.println("That shouldn't happen...");
                     }
-                    System.out.printf("Player Wins: " + playerWins + "\nCPU Wins: " + cpuWins);
+                    System.out.printf("\nPlayer Wins: " + playerWins + "\nCPU Wins: " + cpuWins);
                 }
                 if (playerWins == 3) {
-                    System.out.println("Player Wins!!");
+                    System.out.println("\nPlayer Wins!!");
                     gameRun = false;
                 }
                 if (cpuWins == 3) {
-                    System.out.println("CPU Wins!!");
+                    System.out.println("\nCPU Wins!!");
                     gameRun = false;
                 }
             }
